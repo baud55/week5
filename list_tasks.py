@@ -1,20 +1,31 @@
-#TASK 1
-# Create an empty list
-fruits = []
 
-# Initialise the list with some fruits
-fruits = ["apple", "banana", "cherry"]
+#TASK2
+def directions():
 
-# Display the original list
-print("Original list:", fruits)
+#Creates and returns a list of maze directions.
 
-# Add a new fruit to the end of the list
-fruits.append("dragon fruit")
-print("After append:", fruits)
+# Create a list containing the navigation steps
+    steps = [
+        "Move Forward",
+        "Move Backward",
+        "Turn Left",
+        "Turn Right"
+    ]
 
-# Remove a fruit from the list
-fruits.remove("dragon fruit")
-print("After remove:", fruits)
+# Return the list
+    return steps
+def run_task1():
+
+    #Calls the directions function and displays the list.
 
 
+    # Retrieve the list of directions
+    steps = directions()
+
+    # Display the list
+    print(steps)
+
+# Call the function only when this file is run directly
+if __name__ == "__main__":
+    run_task1()
 
