@@ -1,31 +1,21 @@
 
-#TASK2
-def directions():
+#TASK3
+def movements():
+#Create the list and add value to it
+    path = ["Move Forward",10,"Move Backward",5,"Move Left",3,"Move Right",1]
+#Return the list
+    return path
 
-#Creates and returns a list of maze directions.
-
-# Create a list containing the navigation steps
-    steps = [
-        "Move Forward",
-        "Move Backward",
-        "Turn Left",
-        "Turn Right"
-    ]
-
-# Return the list
-    return steps
-def run_task1():
-
-    #Calls the directions function and displays the list.
-
-
-    # Retrieve the list of directions
-    steps = directions()
-
-    # Display the list
-    print(steps)
-
-# Call the function only when this file is run directly
+def run_task2():
+    print("Moving ....")
+#Call the `movements` function
+    path = movements()
+#Display the movements
+    print(f"{path[0]} for {path[1]}")
+    print(f"{path[2]} for {path[3]}")
+    print(f"{path[4]} for {path[5]}")
+    print(f"{path[6]} for {path[7]}")
+#Call function only when the file is executed directly
 if __name__ == "__main__":
-    run_task1()
+    run_task2()
 
